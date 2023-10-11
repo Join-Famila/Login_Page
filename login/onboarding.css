@@ -34,12 +34,6 @@ button {
   all: unset;
 }
 
-.bar {
-  width: 100%;
-  height: 24px;
-  position: relative;
-}
-
 .bottom_bar {
   width: 100%;
   height: 48px;

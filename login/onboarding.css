@@ -49,10 +49,10 @@ button {
 }
 
 .onboarding_logo {
-  width: 139.084px;
-  height: 139.291px;
-  margin-top: 260px;
-  margin-bottom: 121.71px;
+  width: 243px;
+  height: 164.18px;
+  margin-top: 233px;
+  margin-bottom: 147.82px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -121,48 +121,29 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  border: 1px solid #ec616f;
+  border: 1px solid #f5935c;
   background: #fff;
   position: relative;
 }
 
 .no_btn_text {
-  color: #ec616f;
+  color: #f5935c;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
 }
 
 /* 아이폰SE 375*667에서 화면 하단 안보임 */
-/* 고치자니 갤럭시S8+ 360*740이 걸림 */
+/* 고치자니 갤럭시S8+ 360*740이 걸림 => 비율로*/
 
-/* @media screen and (max-device-width:640px) and (device-aspect-ratio:9/16) */
 @media only screen and (min-aspect-ratio: 1/2) {
   .onboarding_logo {
-    width: 139.084px;
-    height: 139.291px;
-    margin-top: 180px;
-    margin-bottom: 121.71px;
+    width: 243px;
+    height: 164.18px;
+    margin-top: 150px;
+    margin-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
   }
 }
-/* @media only screen and (max-width: 390px) {
-  .html {
-    height: 100%;
-  }
-
-  .body {
-    height: 100%;
-  }
-
-  .background {
-    height: 100%;
-  }
-
-  .window {
-    width: 390px;
-    height: 800px;
-  }
-} */

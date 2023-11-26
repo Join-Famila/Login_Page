@@ -1,0 +1,150 @@
+.titleArea {
+  width: 100%;
+  height: 56px;
+  position: relative;
+  padding: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1px #e7e8ee inset;
+}
+
+.backBtn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.titleText {
+  width: max-content;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.inputArea {
+  width: 100%;
+  height: 250px;
+  margin-top: 16px;
+  border: none;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.midTilte {
+  width: 100%;
+  height: 26px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.numBalsong {
+  width: 100%;
+  height: 56px;
+  position: relative;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+input::placeholder {
+  color: #afb2c0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.num {
+  width: 60%;
+  height: 56px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #d6d7e1;
+  text-indent: 12px;
+}
+
+.balsong {
+  width: 38%;
+  height: 56px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #d6d7e1;
+  background: #ffffff;
+  color: #5c5f70;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.inzung_input {
+  width: 100%;
+  height: 56px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #d6d7e1;
+  text-indent: 12px;
+  margin-bottom: 3px;
+}
+
+.helperText {
+  width: 100%;
+  height: 40px;
+  margin-left: 8px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  position: relative;
+  color: #eb5757;
+  /*color: #27AE60;*/
+}
+
+.okArea {
+  width: 100%;
+  padding: 0 16px 20px 16px;
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  bottom: 0;
+}
+
+.okBtn {
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 100px;
+  background: #ec616f;
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  /* 가로 길이가 세로 길이보다 길거나 같은 경우에 적용될 스타일 */
+  .okArea {
+    width: 360px;
+    height: 64px;
+    padding: 0 16px 20px 16px;
+    box-sizing: border-box;
+    border: none;
+    position: absolute;
+    bottom: 0;
+  }
+}

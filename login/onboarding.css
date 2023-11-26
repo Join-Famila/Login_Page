@@ -1,73 +1,22 @@
-html,
-body {
+.logo_area {
   width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-.background {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  margin: 0px;
-  padding: 0px;
-}
-
-.window {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  width: 360px;
-  height: 800px;
-  margin: 0 auto;
-  padding: 0px;
-}
-
-* {
-  font-family: Pretendard, "Noto Sans KR", sans-serif;
-}
-
-button {
-  all: unset;
-}
-
-.bottom_bar {
-  width: 100%;
-  height: 48px;
+  height: 73vh;
   position: relative;
-  bottom: 0;
-  background-color: #1f2128;
+  display: flex;
 }
 
 .onboarding_logo {
-  width: 243px;
-  height: 164.18px;
-  margin-top: 233px;
-  margin-bottom: 147.82px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 140px;
+  height: 140px;
+  margin: auto auto;
   position: relative;
-}
-
-.login_btns_area {
-  width: 100%;
-  height: 182px;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  /* 나열 된  요소들의 총 넓이 > 부모 넓이 -> 이 요소들을 다음 줄에 이어서 나열 */
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 26px;
 }
 
 .kakao_login_btn {
   display: flex;
   width: 328px;
   height: 50px;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -83,7 +32,7 @@ button {
 }
 
 .kakao_btn_text {
-  color: rgba(0, 0, 0, 0.85);
+  color: #000000;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -93,6 +42,7 @@ button {
   display: flex;
   width: 328px;
   height: 50px;
+  margin: 16px auto 0px;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -106,38 +56,4 @@ button {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-}
-
-.no_login_btn {
-  display: flex;
-  width: 328px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  border: 1px solid #f5935c;
-  background: #fff;
-  position: relative;
-}
-
-.no_btn_text {
-  color: #f5935c;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-}
-
-/* 아이폰SE 375*667에서 화면 하단 안보임 */
-/* 고치자니 갤럭시S8+ 360*740이 걸림 => 비율로*/
-
-@media only screen and (min-aspect-ratio: 1/2) {
-  .onboarding_logo {
-    width: 243px;
-    height: 164.18px;
-    margin-top: 150px;
-    margin-bottom: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-  }
 }

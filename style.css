@@ -25,6 +25,12 @@ body {
   margin: 0 auto;
   padding: 0px;
   position: relative;
+  overflow-y: auto;
+  -ms-overflow-style: none; /*IE and Edge*/
+}
+
+.window ::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -47,13 +53,12 @@ width: 360px;로 바꿔야 됌 그래야 탭 형식 오류X */
   /* 가로 길이가 세로 길이보다 길거나 같은 경우에 적용될 스타일 */
   .background {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
     margin: 0px;
     padding: 0px;
-    justify-content: center;
     background: #000000;
   }
   /*갤럭시 s8+처럼 보이게*/

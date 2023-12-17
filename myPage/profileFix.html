@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./myPage.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>ProfileFix</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="window">
+        <div class="head">
+          <img
+            class="leftArrow"
+            src="../images/arrow-left.png"
+            onClick="history.back();"
+          />
+          프로필 수정
+        </div>
+        <form class="formBox">
+          <div class="profileImgText">프로필 사진</div>
+          <div class="imgArea">
+            <!-- <div class="imgView"></div> -->
+            <!-- js로 사진 추가하면 imgBiew에 사진 보이게 해야 됌 -->
+            <label>
+              <div class="imgBtn">
+                <img class="cmr" src="../images/camera_icon.png" />
+                <div class="imgText"><span>0</span>/1</div>
+                <!-- span에 id만들어서 js로 사진 넣으면 1로 바뀌게-->
+              </div>
+              <input
+                name="addImg"
+                type="file"
+                accept="image/*"
+                style="display: none"
+              />
+            </label>
+          </div>
+          <div class="notice">
+            <img src="../images/info_icon.png" class="infoIcon" />
+            <div class="notiText">얼굴이 보이는 실물사진을 첨부해주세요.</div>
+          </div>
+          <div class="chihyangBtn">내 취향 등록하기</div>
+          <div class="midText">이름</div>
+          <input
+            name="seniorName"
+            type="text"
+            placeholder="실명을 입력해주세요"
+            class="name"
+          />
+          <div class="midText">자기 소개</div>
+          <textarea
+            name="introduce"
+            class="introInput"
+            placeholder="자기소개를 입력하면 모임 참여 신청이 승인될 확률이 높아지고 더 많은 사람들과 교류할 수 있습니다."
+          ></textarea>
+          <div class="midText">성별</div>
+          <div class="genderArea">
+            <label class="radioArea">
+              <input name="seniorGender" type="radio" value="male" checked />
+              <div class="radioText">남성</div>
+            </label>
+            <label class="radioArea">
+              <input name="seniorGender" type="radio" value="female" />
+              <div class="radioText">여성</div>
+            </label>
+          </div>
+          <!-- 지역부분 구현이 너무 어려워서 datalist(text+select기능)로 했는데
+              그나마 제 수준에서 현실가능(?)아이디어 떠오른게 카카오 주소검색 API사용하는게
+              제일 나아보이긴 해요 -->
+          <div class="midText">활동 지역</div>
+          <input
+            name="seniorLoca"
+            type="text"
+            list="locations"
+            placeholder="거주하는 동네를 입력해주세요"
+            class="loca"
+          />
+          <datalist id="locations">
+            <option value="서울특별시 강남구 신사동"></option>
+            <option value="서울특별시 강남구 논현동"></option>
+            <option value="서울특별시 강남구 청담동"></option>
+            <option value="서울특별시 강남구 삼성동"></option>
+            <option value="서울특별시 강남구 압구정동"></option>
+            <option value="서울특별시 강남구 대치동"></option>
+            <option value="부산광역시 소래포구 어쩌구"></option>
+            <option value="경기도 하남시 미사1동"></option>
+          </datalist>
+          <!-- 나이도 select로 해야되는데 20대부터 100살까지 -->
+          <div class="midText">나이</div>
+          <input
+            name="seniorAge"
+            type="number"
+            list="age"
+            placeholder="나이를 입력해주세요"
+            class="loca"
+          />
+          <datalist id="age">
+            <option value="53"></option>
+            <option value="54"></option>
+            <option value="58"></option>
+            <option value="59"></option>
+            <option value="60"></option>
+            <option value="61"></option>
+            <option value="62"></option>
+          </datalist>
+
+          <div class="okArea">
+            <input type="submit" name="ok" value="완료" class="okBtn" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

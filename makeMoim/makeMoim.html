@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./makeMoim.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>Make Moim</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="window">
+        <div class="titleArea">
+          <div class="backBtn" onClick="history.back();">
+            <img src="../images/arrow-left.png" />
+          </div>
+          <div class="titleText">모임 만들기</div>
+        </div>
+        <form class="formBox">
+          <div class="midText">모임명</div>
+          <input
+            name="moimName"
+            type="text"
+            placeholder="모임 이름을 입력해주세요"
+            class="name"
+          />
+          <div class="midText">모임 소개</div>
+          <textarea
+            name="moimSogae"
+            placeholder="모임 소개를 입력해주세요"
+            class="moimSogae"
+          ></textarea>
+          <div class="midText">활동 지역</div>
+          <input
+            name="moimLoca"
+            type="text"
+            placeholder="모임 활동 지역을 입력해주세요"
+            class="loca"
+          />
+          <div class="midText">모임 주제</div>
+          <div class="moimJujaeArea">
+            <div class="whiteTag">🏌🏼 활동/건강</div>
+            <div class="tag">헬스</div>
+            <div class="tag">등산</div>
+            <div class="tag">자전거</div>
+          </div>
+          <div class="moimJujaeBtn">모임 주제 선택 +</div>
+          <div class="profileImgText">대표사진</div>
+          <div class="imgArea">
+            <!-- <div class="imgView"></div> -->
+            <!-- js로 사진 추가하면 imgBiew에 사진 보이게 해야 됌 -->
+            <label>
+              <div class="imgBtn">
+                <img class="cmr" src="../images/camera_icon.png" />
+                <div class="imgText"><span>0</span>/5</div>
+                <!-- span에 id만들어서 js로 사진 넣으면 1추가되도록 바뀌게-->
+              </div>
+              <input
+                name="addMoimImg"
+                type="file"
+                accept="image/*"
+                style="display: none"
+              />
+            </label>
+          </div>
+          <div class="okArea">
+            <input type="submit" name="ok" value="모임등록" class="okBtn" />
+          </div>
+        </form>
+        <div class="none"><div class="nonenone"></div></div>
+        <div class="Nav">
+          <div class="navArea">
+            <img class="navIcon" src="../images/homeIcon.png" />
+            <div class="navText">홈</div>
+          </div>
+          <div class="navArea">
+            <img class="navIcon" src="../images/moimIcon.png" />
+            <div class="navText">생활도움</div>
+          </div>
+          <div class="navArea">
+            <img class="navIcon" src="../images/oranMoimIcon.png" />
+            <div class="navOrangeText">모임활동</div>
+          </div>
+          <div class="navArea">
+            <img class="navIcon" src="../images/neIcon.png" />
+            <div class="navText">내 정보</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

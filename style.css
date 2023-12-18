@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #ffffff;
   margin: 0px;
   padding: 0px;
@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   background-color: #ffffff;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 auto;
   padding: 0px;
   position: relative;

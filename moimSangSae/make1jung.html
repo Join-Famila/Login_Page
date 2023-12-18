@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./moimHome.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>Make 1jung</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="window">
+        <div class="head">
+          <img class="leftArrow" src="../images/arrow-left.png" />
+          일정 생성
+        </div>
+        <form class="jungForm">
+          <div class="midText">날짜 선택</div>
+          <input type="date" name="jungDate" class="inputBox" />
+          <div class="midText">시간 선택</div>
+          <input type="time" name="jungTime" class="inputBox" />
+          <div class="midText">모임 회비</div>
+          <input
+            name="jungMoney"
+            type="number"
+            placeholder="숫자를 입력해주세요"
+            class="inputMinBox"
+          />
+          <div class="text1">원</div>
+          <div class="midText">참가 인원</div>
+          <input
+            name="jungInone"
+            type="number"
+            placeholder="숫자를 입력해주세요"
+            class="inputMinBox"
+          />
+          <div class="text1">명</div>
+          <div class="midText">모임 상세위치</div>
+          <div class="minText">주소 검색</div>
+          <input
+            name="jungAdd"
+            type="text"
+            placeholder="주소를 작성해주세요"
+            class="inputBox"
+          />
+          <div class="minText">상세 위치</div>
+          <input
+            name="jungDetailAdd"
+            type="text"
+            placeholder="상세 위치를 작성해주세요"
+            class="inputBox"
+          />
+          <input type="submit" name="jungOk" value="완료" class="okBtn" />
+        </form>
+        <div class="none"><div class="nonenone"></div></div>
+        <div class="Nav">
+          <div class="navArea">
+            <img class="navIcon" src="../images/homeIcon.png" />
+            <div class="navText">홈</div>
+          </div>
+          <div class="navArea">
+            <img class="navIcon" src="../images/moimIcon.png" />
+            <div class="navText">생활도움</div>
+          </div>
+          <div class="navArea">
+            <img class="navIcon" src="../images/oranMoimIcon.png" />
+            <div class="navOrangeText">모임활동</div>
+          </div>
+          <div class="navArea">
+            <img class="navIcon" src="../images/neIcon.png" />
+            <div class="navText">내 정보</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -152,7 +152,7 @@ input::placeholder {
 }
 
 [type="radio"]:checked {
-  accent-color: #ec616f;
+  accent-color: #f5935c;
 }
 
 /* input:focus {
@@ -220,7 +220,7 @@ radio클릭하면 사각형으로 테두리 생겨서 보류 */
   height: 44px;
   border: none;
   border-radius: 100px;
-  background: #ec616f;
+  background: #f5935c;
   color: #ffffff;
   font-size: 18px;
   font-style: normal;

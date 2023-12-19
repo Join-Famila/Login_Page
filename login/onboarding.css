@@ -1,15 +1,26 @@
 .logo_area {
   width: 100%;
-  height: 73vh;
+  height: 60%;
   position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .onboarding_logo {
-  width: 140px;
-  height: 140px;
-  margin: auto auto;
+  width: 120px;
+  height: 120px;
+  margin: 27vh auto 16px auto;
   position: relative;
+}
+
+.logoText {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: var(--primary-secondary-secondary, #f5935c);
+  width: max-content;
 }
 
 .kakao_login_btn {
@@ -56,4 +67,41 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
+}
+
+.no_login_btn {
+  display: flex;
+  width: 328px;
+  height: 50px;
+  margin: 16px auto 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid var(--primary-secondary-secondary, #f5935c);
+  background: #ffffff;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  position: relative;
+}
+.no_btn_text {
+  color: var(--primary-secondary-secondary, #f5935c);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.orange_arrow {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 16px;
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  /* 가로 길이가 세로 길이보다 길거나 같은 경우에 적용될 스타일 */
+  .onboarding_logo {
+    width: 120px;
+    height: 120px;
+    margin: 200px auto 16px auto;
+    position: relative;
+  }
 }

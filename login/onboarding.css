@@ -82,13 +82,20 @@
   padding: 16px 24px;
   box-sizing: border-box;
   position: relative;
+
 }
 .no_btn_text {
   color: var(--primary-secondary-secondary, #f5935c);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
+  text-decoration: none; /* 밑줄 제거 */
 }
+
+.no_btn_text:hover {
+  text-decoration: none; /* 호버 시에도 밑줄이 나타나지 않도록 설정 */
+}
+
 .orange_arrow {
   width: 18px;
   height: 18px;

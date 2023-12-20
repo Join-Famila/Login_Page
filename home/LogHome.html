@@ -102,7 +102,7 @@
             <div class="mesNumArea"><div class="mesNum">23</div></div>
           </div>
         </div>
-        <div class="makeMoim">
+        <div class="makeMoim" onclick="location.href='../makeMoim/makeMoim.html'">
           <img class="plus" src="../images/plusIcon.png" />
           <dic class="makeMoText">모임 만들기</dic>
         </div>
@@ -112,15 +112,15 @@
             <img class="navIcon" src="../images/homeOrange.png" />
             <div class="navOrangeText">홈</div>
           </div>
-          <div class="navArea">
+          <div class="navArea" onclick="location.href='../moim/findMoim.html'">
             <img class="navIcon" src="../images/moimIcon.png" />
             <div class="navText">모임 찾기</div>
           </div>
-          <div class="navArea">
+          <div class="navArea" onclick="showAlert()">
             <img class="navIcon" src="../images/chimiIcon.png" />
             <div class="navText">취미용품</div>
           </div>
-          <div class="navArea">
+          <div class="navArea" onclick="location.href='../myPage/myPage.html'">
             <img class="navIcon" src="../images/neIcon.png" />
             <div class="navText">내 정보</div>
           </div>
@@ -128,4 +128,9 @@
       </div>
     </div>
   </body>
+  <script>
+    function showAlert() {
+      alert('준비중입니다...');
+    }
+  </script>
 </html>

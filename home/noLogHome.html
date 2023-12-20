@@ -23,15 +23,15 @@
         <div class="loginBox">
           <div class="unknown_pro"></div>
           <div class="box1">
-            <div class="unknownName">최순자</div>
+            <div class="unknownName">로그인을 해주세요.</div>
             <div class="unknownAgeGender">
-              <span>75</span>세, <span>여성</span>
+              <span>?</span>세, <span>성별</span>
             </div>
           </div>
         </div>
         <div class="myMoim">내 모임 <span class="ora">2</span></div>
         <div class="findMoim" style="margin: 20px 0 0 16px">+ 모임 찾기</div>
-        <div class="makeMoim">
+        <div class="makeMoim" onclick="location.href='../login/onboarding.html'">
           <img class="plus" src="../images/plusIcon.png" />
           <dic class="makeMoText">모임 만들기</dic>
         </div>
@@ -44,11 +44,11 @@
             <img class="navIcon" src="../images/moimIcon.png" />
             <div class="navText">모임 찾기</div>
           </div>
-          <div class="navArea">
+          <div class="navArea" onclick="showAlert()">
             <img class="navIcon" src="../images/chimiIcon.png" />
             <div class="navText">취미용품</div>
           </div>
-          <div class="navArea">
+          <div class="navArea" onclick="location.href='../login/onboarding.html'">
             <img class="navIcon" src="../images/neIcon.png" />
             <div class="navText">내 정보</div>
           </div>
@@ -56,4 +56,9 @@
       </div>
     </div>
   </body>
+  <script>
+    function showAlert() {
+      alert('준비중입니다...');
+    }
+  </script>
 </html>

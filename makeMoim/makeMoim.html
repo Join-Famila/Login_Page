@@ -35,7 +35,7 @@
             placeholder="모임 소개를 입력해주세요"
             class="moimSogae"
           ></textarea>
-          <div class="midText">활동 지역</div>
+          <div class="midText">활동 지역(도,시,군/구,동으로 적어주세요.)</div>
           <input
             name="moimLoca"
             type="text"
@@ -49,7 +49,7 @@
             <div class="tag">등산</div>
             <div class="tag">자전거</div>
           </div>
-          <div class="moimJujaeBtn">모임 주제 선택 +</div>
+          <div class="moimJujaeBtn" onclick="location.href='./moimJujae.html'">모임 주제 선택 +</div>
           <div class="profileImgText">대표사진</div>
           <div class="imgArea">
             <!-- <div class="imgView"></div> -->
@@ -74,24 +74,30 @@
         </form>
         <div class="none"><div class="nonenone"></div></div>
         <div class="Nav">
-          <div class="navArea">
+          <div class="navArea" onclick="location.href='../home/LogHome.html'">
             <img class="navIcon" src="../images/homeIcon.png" />
             <div class="navText">홈</div>
           </div>
           <div class="navArea">
-            <img class="navIcon" src="../images/moimIcon.png" />
-            <div class="navText">생활도움</div>
-          </div>
-          <div class="navArea">
             <img class="navIcon" src="../images/oranMoimIcon.png" />
-            <div class="navOrangeText">모임활동</div>
+            <div class="navOrangeText">모임 찾기</div>
           </div>
-          <div class="navArea">
+          <div class="navArea" onclick="showAlert()">
+            <img class="navIcon" src="../images/chimiIcon.png" />
+            <div class="navText">취미용품</div>
+          </div>
+          <div class="navArea" onclick="location.href=''">
             <img class="navIcon" src="../images/neIcon.png" />
             <div class="navText">내 정보</div>
+          </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    function showAlert() {
+      alert('준비중입니다...');
+    }
+  </script>
 </html>

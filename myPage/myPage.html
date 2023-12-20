@@ -36,7 +36,7 @@
           <div class="tag">자전거</div>
           <div class="tag">건강관리</div>
           <div class="tag">친목</div>
-          <div class="tag">댄스동아뤼</div>
+          <div class="tag">댄스동아리</div>
           <div class="tag">댄스</div>
           <div class="tag">댄스</div>
         </div>
@@ -54,15 +54,15 @@
         </div>
         <div class="none"><div class="nonenone"></div></div>
         <div class="Nav">
-          <div class="navArea">
+          <div class="navArea" onclick="location.href='../home/LogHome.html'">
             <img class="navIcon" src="../images/homeIcon.png" />
             <div class="navText">홈</div>
           </div>
-          <div class="navArea">
+          <div class="navArea" onclick="location.href='../moim/findMoim.html'">
             <img class="navIcon" src="../images/moimIcon.png" />
             <div class="navText">모임 찾기</div>
           </div>
-          <div class="navArea">
+          <div class="navArea" onclick="showAlert()">
             <img class="navIcon" src="../images/chimiIcon.png" />
             <div class="navText">취미용품</div>
           </div>
@@ -74,4 +74,9 @@
       </div>
     </div>
   </body>
+  <script>
+    function showAlert() {
+      alert('준비중입니다...');
+    }
+  </script>
 </html>

@@ -17,8 +17,8 @@
       <div class="window">
         <div class="head">모임 활동</div>
         <div class="titleBox">
-          <div class="title">모임 찾기</div>
-          <div class="title">내 모임</div>
+          <div class="title" onclick="location.href='./findMoim.html'">모임 찾기</div>
+          <div class="title" onclick="location.href='./myMoim.html'">내 모임</div>
           <div class="selTitle">모임 종류</div>
         </div>
         <div class="typeChiArea">
@@ -65,30 +65,36 @@
           <div class="tagList">축제</div>
           <div class="tagList">캠핑</div>
         </div>
-        <div class="makeMoim">
+        <div class="makeMoim" onclick="location.href='../makeMoim/makeMoim.html'">
           <img class="plus" src="../images/plusIcon.png" />
           <dic class="makeMoText">모임 만들기</dic>
         </div>
         <div class="none"><div class="nonenone"></div></div>
         <div class="Nav">
-          <div class="navArea">
+          <div class="navArea" onclick="location.href='../home/LogHome.html'">
             <img class="navIcon" src="../images/homeIcon.png" />
             <div class="navText">홈</div>
           </div>
           <div class="navArea">
-            <img class="navIcon" src="../images/moimIcon.png" />
-            <div class="navText">생활도움</div>
-          </div>
-          <div class="navArea">
             <img class="navIcon" src="../images/oranMoimIcon.png" />
-            <div class="navOrangeText">모임활동</div>
+            <div class="navOrangeText">모임 찾기</div>
           </div>
-          <div class="navArea">
+          <div class="navArea" onclick="showAlert()">
+            <img class="navIcon" src="../images/chimiIcon.png" />
+            <div class="navText">취미용품</div>
+          </div>
+          <div class="navArea" onclick="location.href='../myPage/myPage.html'">
             <img class="navIcon" src="../images/neIcon.png" />
             <div class="navText">내 정보</div>
           </div>
         </div>
+        </div>
       </div>
     </div>
   </body>
+  <script>
+    function showAlert() {
+  alert('준비중입니다...');
+}
+</script>
 </html>
